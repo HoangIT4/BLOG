@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "@styles/styles.css";
+import "@styles/Login.css";
 import SignInForm from "@components/SignInForm.jsx";
 import SignUpForm from "@components/SignUpForm.jsx";
 
-export default function App() {
+export default function LoginPage() {
     const [type, setType] = useState("signIn");
     const handleOnClick = text => {
         if (text !== type) {
@@ -14,7 +14,7 @@ export default function App() {
     const containerClass =
         "container " + (type === "signUp" ? "right-panel-active" : "");
     return (
-        <div className="App">
+        <div className="LoginPage">
             <div className={containerClass} id="container">
                 <SignUpForm />
                 <SignInForm />
