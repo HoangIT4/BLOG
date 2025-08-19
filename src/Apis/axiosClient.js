@@ -1,5 +1,5 @@
 import axios from 'axios';
-
+//json-server --watch data.json --port 8888
 const axiosClient = axios.create({
     baseURL: 'http://localhost:8888', // ✅ Sửa lại thành URL backend thật
     headers: {
